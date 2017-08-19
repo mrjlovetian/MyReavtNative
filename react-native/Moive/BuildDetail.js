@@ -3,6 +3,7 @@ import {
   View,
   Text,
   StyleSheet,
+  ScrollView,
 }from 'react-native';
 
 import MyNav from './MyNav';
@@ -17,7 +18,7 @@ export default class BuildDetail extends Component{
     return(
       <View style={{flex:1}}>
         <MyNav onPress={this._pop.bind(this)}/>
-        <View style={{backgroundColor:'red', flex:1}}></View>
+        <ScrollView style={{backgroundColor:'red', flex:1}}></ScrollView>
       </View>
     )
   }
